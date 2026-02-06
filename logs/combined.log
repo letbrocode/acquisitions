@@ -1,2 +1,14 @@
 {"level":"info","message":"Hello from Acquistions!","service":"acquisitions-api"}
 {"level":"info","message":"::1 - - [06/Feb/2026:15:17:09 +0000] \"GET / HTTP/1.1\" 200 23 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Feb/2026:19:33:04 +0000] \"GET /api HTTP/1.1\" 200 41 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Feb/2026:19:33:11 +0000] \"GET /api/auth HTTP/1.1\" 404 147 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Feb/2026:19:34:39 +0000] \"GET /api/health HTTP/1.1\" 404 149 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Feb/2026:19:35:02 +0000] \"GET /health HTTP/1.1\" 200 75 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Feb/2026:19:35:21 +0000] \"POST /api/auth/sign-in HTTP/1.1\" 404 156 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Feb/2026:19:35:34 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 200 5 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"info","message":"User admin@test.com created successfully","service":"acquisitions-api"}
+{"level":"info","message":"User registered successfully: admin@test.com","service":"acquisitions-api"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Feb/2026:20:02:24 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 201 100 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
+{"level":"error","message":"Error creating the user: Error: User with this email already exists","service":"acquisitions-api"}
+{"level":"error","message":"Signup error User with this email already exists","service":"acquisitions-api","stack":"Error: User with this email already exists\n    at createUser (file:///D:/Projects/mernProjects/javascriptmastery/acquisitions/src/services/auth.service.js:34:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async signup (file:///D:/Projects/mernProjects/javascriptmastery/acquisitions/src/controllers/auth.controller.js:21:18)"}
+{"level":"info","message":"::ffff:127.0.0.1 - - [06/Feb/2026:20:02:29 +0000] \"POST /api/auth/sign-up HTTP/1.1\" 409 31 \"-\" \"Thunder Client (https://www.thunderclient.com)\"","service":"acquisitions-api"}
